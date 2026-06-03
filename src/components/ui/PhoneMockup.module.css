@@ -1,0 +1,22 @@
+.phone {
+  background: #1a1714;
+  border-radius: 28px;
+  border: 1.5px solid rgba(200, 145, 58, 0.2);
+  overflow: hidden;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.7),
+              inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s ease;
+  perspective: 1200px;
+}
+
+.phone:hover {
+  transform: rotateY(0deg) rotateX(0deg) translateY(-8px) !important;
+}
+
+.sm { width: 160px; height: 320px; }
+.md { width: 190px; height: 380px; }
+
+@media (max-width: 480px) {
+  .sm { width: 130px; height: 260px; }
+  .md { width: 160px; height: 320px; }
+}

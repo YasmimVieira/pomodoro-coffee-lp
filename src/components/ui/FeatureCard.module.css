@@ -1,0 +1,54 @@
+/* FeatureCard.module.css */
+.card {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200, 145, 58, 0.25), transparent);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.card:hover {
+  border-color: rgba(200, 145, 58, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover::before { opacity: 1; }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(200, 145, 58, 0.1);
+  border: 1px solid rgba(200, 145, 58, 0.2);
+  border-radius: 10px;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
