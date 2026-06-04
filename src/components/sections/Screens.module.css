@@ -32,8 +32,16 @@
 
 .phones {
   display: flex;
-  justify-content: center;
   align-items: flex-end;
-  gap: 28px;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 var(--padding-x) var(--space-lg);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.phones::-webkit-scrollbar { display: none; }
+
+.phoneItem {
+  flex-shrink: 0;
 }
