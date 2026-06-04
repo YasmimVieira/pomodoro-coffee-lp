@@ -1,0 +1,116 @@
+.section {
+  padding: var(--space-2xl) 0;
+  background: var(--bg2);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-x);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-sm);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(26px, 4vw, 46px);
+  color: var(--cream);
+  margin-bottom: var(--space-sm);
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.timeline {
+  display: flex;
+  gap: 4px;
+  margin: var(--space-lg) 0;
+}
+
+.phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.phaseFocus { flex: 5; }
+.phasePause { flex: 1; }
+
+.phaseBar {
+  width: 100%;
+  height: 6px;
+  border-radius: 100px;
+}
+
+.phaseFocus .phaseBar { background: var(--gold-muted); }
+.phasePause .phaseBar { background: var(--border); }
+
+.phaseTime {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.phaseName {
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-sm);
+}
+
+.pct {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.stepTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cream);
+}
+
+.stepDesc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 640px) {
+  .steps {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+}
