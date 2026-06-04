@@ -1,3 +1,6 @@
+'use client'
+
+import { useScrollReveal } from '@/hooks/useScrollReveal'
 import { FeatureCard } from '@/components/ui/FeatureCard'
 import type { Feature } from '@/types'
 import styles from './Features.module.css'
@@ -36,15 +39,20 @@ const FEATURES: Feature[] = [
 ]
 
 export function Features() {
+  const headerRef = useScrollReveal<HTMLDivElement>({ y: 30 })
+  const gridRef   = useScrollReveal<HTMLDivElement>({ y: 40, stagger: 0.1, start: 'top 82%' })
+
   return (
     <section className={styles.section} id="recursos">
       <div className={styles.inner}>
-        <div className={styles.header}>
+        <div className={styles.header} ref={headerRef}>
           <h2 className={styles.title}>Feito para focar de verdade</h2>
         </div>
-        <div className={styles.grid}>
+        <div className={styles.grid} ref={gridRef}>
           {FEATURES.map(feat => (
-            <FeatureCard key={feat.title} {...feat} />
+            <div key={feat.title} data-reveal>
+              <FeatureCard {...feat} />
+            </div>
           ))}
         </div>
       </div>
