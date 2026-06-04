@@ -14,7 +14,7 @@ export function Footer() {
           <a href="#telas">Telas</a>
           <a href="#baixar">Baixar</a>
         </nav>
-        <p className={styles.copy}>© 2026 Pomodoro Coffee · Foco, gole a gole</p>
+        <p className={styles.copy}>© 2026 PomodoroCoffee · Foco, gole a gole | Powered by <a href="https://yvstudio.com" target="_blank" rel="noopener noreferrer" className={styles.copy}>YV Studio</a></p>
       </div>
     </footer>
   )
