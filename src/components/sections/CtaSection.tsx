@@ -11,7 +11,7 @@ export function CtaSection() {
             Sua próxima hora de foco<br />começa agora
           </h2>
           <p className={styles.description}>
-            Grátis para baixar. Sem anúncios. Disponível para iOS e Android.
+            Grátis para baixar. Disponível para iOS e Android.
           </p>
           <div className={styles.buttons}>
             <StoreButton icon="🍎" topLabel="Baixe na" name="App Store" href="#" variant="highlighted" />
