@@ -79,15 +79,6 @@ export function Hero() {
             ))}
           </div>
           <div className={styles.stats}>
-            <div className={styles.stat}>
-              <span className={styles.statValue}>4,9★</span>
-              <span className={styles.statLabel}>App Store</span>
-            </div>
-            <div className={styles.divider} />
-            <div className={styles.stat}>
-              <span className={styles.statValue}>120k+</span>
-              <span className={styles.statLabel}>ciclos por dia</span>
-            </div>
             <div className={styles.divider} />
             <div className={styles.stat}>
               <span className={styles.statValue}>0</span>
