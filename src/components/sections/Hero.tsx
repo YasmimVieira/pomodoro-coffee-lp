@@ -78,13 +78,6 @@ export function Hero() {
               <StoreButton key={link.name} {...link} />
             ))}
           </div>
-          <div className={styles.stats}>
-            <div className={styles.divider} />
-            <div className={styles.stat}>
-              <span className={styles.statValue}>0</span>
-              <span className={styles.statLabel}>anúncios</span>
-            </div>
-          </div>
         </div>
         <div className={styles.visual}>
           <div className={styles.cupGlow} ref={cupRef}>
